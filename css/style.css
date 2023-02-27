@@ -1,5 +1,6 @@
 body {
     background-color: rgb(26, 117, 26);
+    margin: 0;
 }
 
 .chips {
@@ -12,6 +13,7 @@ body {
     position: absolute;
     bottom: 1%;
     padding: 10px;
+    margin-left: 10px;
 }
 
 .chip {
@@ -36,7 +38,7 @@ body {
 }
 
 .chip-10 {
-    background-color: blanchedalmond;
+    background-color: rgb(255, 235, 205);
 }
 
 .chip-25 {
@@ -69,5 +71,74 @@ body {
 }
 
 .chip-selected {
-    outline: 2px solid black
+    outline: 2px solid black;
+}
+
+.chip-selected:is(.chip-1000) {
+    outline: 2px solid white;
+}
+
+.chip-selected:is(.chip-cancel) {
+    outline: none;
+}
+
+.bets {
+    position: absolute;
+    bottom: 20%;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-bet {
+    background-color: rgba(25,25,25,0.3);
+    outline: 2px dashed black;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 20vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-bet:hover {
+    cursor: pointer;
+}
+
+.main-chip {
+    width: 14vmin;
+    height: 14vmin;
+    border-radius: 14vmin;
+    text-align: center;
+    line-height: 14vmin;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.side-bet {
+    background-color: rgba(25,25,25,0.3);
+    outline: 2px dashed black;
+    width: 12vmin;
+    height: 12vmin;
+    border-radius: 12vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bet:hover {
+    cursor: pointer;
+}
+
+.side-chip {
+    width: 8vmin;
+    height: 8vmin;
+    border-radius: 8vmim;
+    text-align: center;
+    line-height: 8vmin;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
 }
