@@ -89,6 +89,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
+    transition-duration: 1s;
 }
 
 .main-bet {
@@ -100,6 +101,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 0.5s;
 }
 
 .main-bet:hover {
@@ -135,10 +137,60 @@ body {
 .side-chip {
     width: 8vmin;
     height: 8vmin;
-    border-radius: 8vmim;
+    border-radius: 8vmin;
     text-align: center;
     line-height: 8vmin;
-    font-size: larger;
+    font-size: smaller;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     user-select: none;
+}
+
+.action-buttons {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    display: flex;
+}
+
+.action-buttons > div {
+    display: flex;
+}
+
+.action-buttons > * > .green {
+    background-color: rgb(32, 209, 32);
+}
+
+.action-buttons > * > .red {
+    background-color: rgb(200, 43, 43);
+}
+
+.action-buttons > * > .orange {
+    background-color: orange;
+}
+
+.action-buttons > * > .blue {
+    background-color: rgb(78, 78, 255);
+}
+
+.action-buttons > * > * {
+    height: 7vmin;
+    width: 10vmin;
+    border-radius: 3vmin;
+    border: none;
+    color: black;
+    transition-duration: 0.5s;
+    text-align: center;
+    line-height: 7vmin;
+    margin-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.action-buttons > * > *:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none !important;
 }
