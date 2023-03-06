@@ -1,6 +1,7 @@
 body {
     background-color: rgb(26, 117, 26);
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .chips {
@@ -156,6 +157,11 @@ body {
     display: flex;
 }
 
+.action-buttons > .game-buttons {
+    width: 22vmin;
+    flex-wrap: wrap;
+}
+
 .action-buttons > * > .green {
     background-color: rgb(32, 209, 32);
 }
@@ -193,4 +199,67 @@ body {
 
 .hidden {
     display: none !important;
+}
+
+.dealer-hand {
+    /* background-color: rgba(25,25,25,0.3);
+    outline: 1px solid red; */
+    height: 30vmin;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.client-hand {
+    /* background-color: rgba(25,25,25,0.3);
+    outline: 1px solid red; */
+    height: 30vmin;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cards p {
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color:rgb(224, 254, 254);
+    width: 20vh;
+    height: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.dealer-hand > .red, .client-hand > .red {
+    color: red;
+}
+
+.tl {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+.br {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+.m {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
 }
